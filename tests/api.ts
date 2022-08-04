@@ -1,5 +1,5 @@
 /* eslint jest/max-expects: [warn, { max: 3 }] -- Ok */
-
+/* eslint-disable @skylib/no-relative-parent-import -- Ok */
 /* eslint-disable @typescript-eslint/no-shadow -- Ok */
 
 import { eslint, jest } from "../api";

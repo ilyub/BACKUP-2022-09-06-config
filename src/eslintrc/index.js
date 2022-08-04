@@ -52,6 +52,39 @@ module.exports = {
     {
       files: [".eslintrc.*.js", ".eslintrc.js", "eslintrc.*.js", "eslintrc.js"],
       extends: "./roles/eslintrc"
+    },
+    {
+      files: [".eslintrc.js"],
+      rules: {
+        "@skylib/config/eslintrc-no-disable": "warn",
+        "@skylib/config/eslintrc-no-rules": "warn"
+      }
+    },
+    {
+      files: [".eslintrc.overrides.js"],
+      rules: {
+        "@skylib/config/eslintrc-no-disable": "warn",
+        "@skylib/config/eslintrc-no-rules": "warn"
+      }
+    },
+    {
+      files: [".eslintrc.rule-overrides.js"],
+      rules: {
+        "@skylib/config/eslintrc-no-disable": "warn",
+        "@skylib/config/eslintrc-no-overrides": "warn"
+      }
+    },
+    {
+      files: [".eslintrc.temp.js"],
+      rules: {
+        "@skylib/config/eslintrc-no-overrides": "warn",
+        "@skylib/config/eslintrc-no-rules": "warn"
+      }
+    },
+    { files: [".prettier.js"], rules: { "@skylib/config/prettier": "warn" } },
+    {
+      files: ["commitlint.scopes.js", "commitlint-all.scopes.js"],
+      rules: { "@skylib/config/sort-commitlint": "warn" }
     }
   ]
 };

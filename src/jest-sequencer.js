@@ -5,7 +5,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const slow = fs.existsSync("./jest.slow.js")
-  ? require(fs.realpathSync("./jest.slow.js"))
+  ? // eslint-disable-next-line @skylib/prefer-const-require -- Ok
+    require(fs.realpathSync("./jest.slow.js"))
   : [];
 
 module.exports = class extends Sequencer {
