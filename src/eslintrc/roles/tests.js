@@ -11,7 +11,9 @@ module.exports = {
   ],
   env: { jest: true },
   rules: {
+    "@skylib/class-match-filename": "off",
     "@skylib/no-at-sign-import": "off",
+    "@skylib/no-at-sign-internal-import": ["warn", { allow: ["@/test-utils"] }],
     "@skylib/require-jsdoc": "off",
     "@skylib/sort-statements": [
       "warn",

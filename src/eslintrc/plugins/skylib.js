@@ -108,58 +108,59 @@ module.exports = {
       "warn",
       {
         sources: [
+          { _id: "catch-all", source: "**", type: "default" },
           {
             _id: "./src/test-utils",
             source: `${pkg.name}/src/test-utils`,
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@sinonjs/fake-timers",
             autoImport: true,
             source: "@sinonjs/fake-timers",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@skylib/facades/test-utils",
             altLocalNames: ["facadesTestUtils"],
             source: "@skylib/facades/src/test-utils",
             sourcePattern: "@skylib/facades/{dist,es}/test-utils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@skylib/framework/test-utils",
             altLocalNames: ["frameworkTestUtils"],
             source: "@skylib/framework/src/test-utils",
             sourcePattern: "@skylib/framework/{dist,es}/test-utils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@skylib/functions/test-utils",
             altLocalNames: ["functionsTestUtils"],
             source: "@skylib/functions/src/test-utils",
             sourcePattern: "@skylib/functions/{dist,es}/test-utils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@skylib/lodash-commonjs-es",
             autoImport: true,
             localName: "_",
             source: "@skylib/lodash-commonjs-es",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@skylib/quasar-extension/test-utils",
             altLocalNames: ["quasarTestUtils"],
             source: "@skylib/quasar-extension/src/test-utils",
             sourcePattern: "@skylib/quasar-extension/{dist,es}/test-utils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@vue/test-utils",
             altLocalNames: ["vueTestUtils"],
             autoImport: true,
             source: "@vue/test-utils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "@vue/test-utils",
@@ -172,7 +173,7 @@ module.exports = {
             _id: "estree",
             autoImport: true,
             source: "estree",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "fs",
@@ -216,19 +217,19 @@ module.exports = {
             autoImport: true,
             localName: "ts",
             source: "typescript",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "tsutils",
             autoImport: true,
             source: "tsutils",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "vscode",
             autoImport: true,
             source: "vscode",
-            type: "wildcard"
+            wildcard: true
           },
           {
             _id: "vue",
@@ -250,8 +251,7 @@ module.exports = {
             localName: "VueDraggable",
             source: "vuedraggable",
             type: "default"
-          },
-          { _id: "catch-all", source: "**", type: "default" }
+          }
         ]
       }
     ],
@@ -279,7 +279,7 @@ module.exports = {
         disallow: ["./*/**", "@*/*/**", "[^@]*/**"]
       }
     ],
-    "@skylib/no-sibling-import": ["warn", { exclusions: ["jest.config"] }],
+    "@skylib/no-sibling-import": "warn",
     "@skylib/object-format": ["warn", { maxLineLength: 80, maxObjectSize: 3 }],
     "@skylib/require-jsdoc": [
       "warn",

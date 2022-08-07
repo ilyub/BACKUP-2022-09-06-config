@@ -55,24 +55,15 @@ module.exports = {
     },
     {
       files: [".eslintrc.js"],
-      rules: {
-        "@skylib/config/eslintrc-no-disable": "warn",
-        "@skylib/config/eslintrc-no-rules": "warn"
-      }
+      rules: { "@skylib/config/eslintrc-no-rules": "warn" }
     },
     {
       files: [".eslintrc.overrides.js"],
-      rules: {
-        "@skylib/config/eslintrc-no-disable": "warn",
-        "@skylib/config/eslintrc-no-rules": "warn"
-      }
+      rules: { "@skylib/config/eslintrc-no-rules": "warn" }
     },
     {
       files: [".eslintrc.rule-overrides.js"],
-      rules: {
-        "@skylib/config/eslintrc-no-disable": "warn",
-        "@skylib/config/eslintrc-no-overrides": "warn"
-      }
+      rules: { "@skylib/config/eslintrc-no-disable": "warn" }
     },
     {
       files: [".eslintrc.temp.js"],
