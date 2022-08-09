@@ -327,27 +327,6 @@ module.exports = {
           "private-dynamic-method"
         ]
       }
-    ],
-    "@skylib/sort-statements": [
-      "warn",
-      {
-        rootOrder: [
-          "ImportDeclaration",
-          "GlobalModuleDeclaration",
-          "ExportAllDeclaration",
-          "ExportDeclaration",
-          "ExportDefaultDeclaration",
-          "ExportUnknown",
-          "ExportTypeDeclaration",
-          "ExportFunctionDeclaration",
-          "ExportModuleDeclaration",
-          "Unknown",
-          "TypeDeclaration",
-          "FunctionDeclaration",
-          "ModuleDeclaration",
-          "JestTest"
-        ]
-      }
     ]
   },
   overrides: [
@@ -378,27 +357,6 @@ module.exports = {
                 selector:
                   "CallExpression[callee.name=defineComponent] > ObjectExpression"
               }
-            ]
-          }
-        ],
-        "@skylib/sort-statements": [
-          "warn",
-          {
-            rootOrder: [
-              "ImportDeclaration",
-              "GlobalModuleDeclaration",
-              "Unknown",
-              "TypeDeclaration",
-              "FunctionDeclaration",
-              "ModuleDeclaration",
-              "ExportAllDeclaration",
-              "ExportDeclaration",
-              "ExportDefaultDeclaration",
-              "ExportTypeDeclaration",
-              "ExportFunctionDeclaration",
-              "ExportModuleDeclaration",
-              "ExportUnknown",
-              "JestTest"
             ]
           }
         ]
