@@ -6,6 +6,7 @@ module.exports = {
   collectCoverageFrom: ["src/**/*.{ts,tsx,vue}", "!**/*.d.ts"],
   coverageDirectory: ".",
   coverageReporters: ["lcov", "lcovonly"],
+  errorOnDeprecated: true,
   globals: {
     "ts-jest": { isolatedModules: true, tsconfig: "./tsconfig-min.json" }
   },
