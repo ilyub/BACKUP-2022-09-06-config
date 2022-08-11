@@ -1,1 +1,1 @@
-module.exports = { extends: ["./src/stylelintrc"] };
+module.exports = { extends: ["./stylelint/scss"] };

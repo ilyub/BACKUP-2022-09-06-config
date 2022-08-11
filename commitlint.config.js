@@ -1,1 +1,1 @@
-module.exports = { extends: ["./src/commitlint.config"] };
+module.exports = { extends: ["./commitlint/default"] };

@@ -1,8 +1,6 @@
 <?php
 
-namespace Skylib\Config;
-
-class PhpCsConfig
+class Recommended
 {
   /**
    * @var array<mixed>

@@ -1,10 +1,10 @@
-const { getAllRules } = require("../src/eslintrc/plugins/api");
+const { getAllRules } = require("../eslint/plugins/api");
 
-const preset = require("../src/jest-preset");
+const preset = require("../jest/preset");
 
-const skylib = require("../src/eslintrc/plugins/skylib");
+const skylib = require("../eslint/plugins/skylib");
 
-const typescriptEslint = require("../src/eslintrc/plugins/typescript-eslint");
+const typescriptEslint = require("../eslint/plugins/typescript-eslint");
 
 module.exports = {
   eslint: {

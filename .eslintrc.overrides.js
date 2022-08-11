@@ -1,13 +1,13 @@
 module.exports = {
   overrides: [
-    { files: "./src/eslintrc/**", extends: "./src/eslintrc/roles/eslintrc" },
+    { files: "./eslint/**", extends: "./eslint/roles/eslintrc" },
     {
       files: "./api/index.js",
-      extends: "./src/eslintrc/options/allow-global-access"
+      extends: "./eslint/options/allow-global-access"
     },
     {
-      files: "./src/jest-preset.js",
-      extends: "./src/eslintrc/options/skip-html-literal-check"
+      files: "./jest/preset.js",
+      extends: "./eslint/options/skip-html-literal-check"
     }
   ]
 };

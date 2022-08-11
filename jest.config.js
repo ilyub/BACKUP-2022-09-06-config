@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverageFrom: ["!**"],
-  preset: "./src/jest-preset",
-  resolver: "./src/jest-resolver",
-  testEnvironment: "./src/jest-env-node",
-  testSequencer: "./src/jest-sequencer"
+  preset: "./jest/preset",
+  resolver: "./jest/resolver",
+  testEnvironment: "./jest/environments/node",
+  testSequencer: "./jest/sequencer"
 };

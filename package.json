@@ -29,8 +29,10 @@
     "/index.d.ts",
     "/api",
     "/bin",
-    "/src",
-    "!**/samples"
+    "/commitlint",
+    "/eslint",
+    "/jest",
+    "/stylelint"
   ],
   "scripts": {
     "add-tags": "php bin/add-tags.php",

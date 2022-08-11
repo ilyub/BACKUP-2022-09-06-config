@@ -1,4 +1,12 @@
-/* eslint @skylib/sort-array: ["warn", {selector: "VariableDeclarator[id.name=/^(?:defaultScopes|types)$/u] > ArrayExpression" }] -- Ok */
+/*
+eslint @skylib/sort-array: [
+  "warn",
+  {
+    selector:
+      "VariableDeclarator[id.name=/^(?:defaultScopes|types)$/u] > ArrayExpression"
+  }
+] -- Ok
+*/
 
 module.exports = sources => {
   const fs = require("node:fs");

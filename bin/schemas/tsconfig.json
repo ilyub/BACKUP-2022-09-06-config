@@ -44,10 +44,10 @@
     },
     "extends": {
       "enum": [
-        "./src/tsconfig-min",
-        "./src/tsconfig-strict",
-        "@skylib/config/src/tsconfig-min",
-        "@skylib/config/src/tsconfig-strict"
+        "./tsconfig/min",
+        "./tsconfig/strict",
+        "@skylib/config/tsconfig/min",
+        "@skylib/config/tsconfig/strict"
       ]
     },
     "include": {
@@ -73,12 +73,27 @@
           "bin/**/*.js",
           "bin/**/*.ts",
           "bin/**/*.vue",
+          "commitlint/**/*.js",
+          "commitlint/**/*.ts",
+          "commitlint/**/*.vue",
+          "eslint/**/*.js",
+          "eslint/**/*.ts",
+          "eslint/**/*.vue",
           "fixtures/**/*.js",
           "fixtures/**/*.ts",
           "fixtures/**/*.vue",
+          "jest/**/*.js",
+          "jest/**/*.ts",
+          "jest/**/*.vue",
+          "sample/**/*.js",
+          "sample/**/*.ts",
+          "sample/**/*.vue",
           "src/**/*.js",
           "src/**/*.ts",
           "src/**/*.vue",
+          "stylelint/**/*.js",
+          "stylelint/**/*.ts",
+          "stylelint/**/*.vue",
           "tests/**/*.js",
           "tests/**/*.ts",
           "tests/**/*.vue"
