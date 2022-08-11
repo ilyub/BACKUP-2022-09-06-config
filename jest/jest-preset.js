@@ -24,14 +24,14 @@ module.exports = {
   modulePathIgnorePatterns: [
     "/(?:\\.git|\\.quasar|\\.scannerwork|\\.vscode|cache|dist|docs|es|lcov-report|node_modules)/"
   ],
-  resolver: "@skylib/config/src/jest-resolver",
+  resolver: "@skylib/config/jest/resolver",
   setupFiles: fs.existsSync("./jest.setup.ts") ? ["./jest.setup.ts"] : [],
   setupFilesAfterEnv: fs.existsSync("./jest.setup-after-env.ts")
     ? ["./jest.setup-after-env.ts"]
     : [],
-  testEnvironment: "@skylib/config/src/jest-env-node",
+  testEnvironment: "@skylib/config/jest/environments/node",
   testMatch: ["<rootDir>/tests/**/*.ts"],
-  testSequencer: "@skylib/config/src/jest-sequencer",
+  testSequencer: "@skylib/config/jest/sequencer",
   testTimeout: 10_000,
   transform: {
     [/\.(?:css|gif|jpg|less|png|sass|scss|styl|svg|ttf|woff|woff2)$/u.source]:

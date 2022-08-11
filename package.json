@@ -32,7 +32,12 @@
     "/commitlint",
     "/eslint",
     "/jest",
-    "/stylelint"
+    "/package-json-lint",
+    "/php-cs-fixer",
+    "/phpstan",
+    "/stylelint",
+    "/tsconfig",
+    "/typedoc"
   ],
   "scripts": {
     "add-tags": "php bin/add-tags.php",

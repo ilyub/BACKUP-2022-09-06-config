@@ -6,7 +6,7 @@ module.exports = {
       extends: "./eslint/options/allow-global-access"
     },
     {
-      files: "./jest/preset.js",
+      files: "./jest/jest-preset.js",
       extends: "./eslint/options/skip-html-literal-check"
     }
   ]

@@ -1,5 +1,5 @@
 includes:
-  - phpstan/default.neon
+  - phpstan/recommended.neon
 parameters:
   paths:
     - api

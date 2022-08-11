@@ -1,6 +1,6 @@
 const { getAllRules } = require("../eslint/plugins/api");
 
-const preset = require("../jest/preset");
+const preset = require("../jest/jest-preset");
 
 const skylib = require("../eslint/plugins/skylib");
 
