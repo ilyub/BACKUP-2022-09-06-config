@@ -32,7 +32,6 @@ module.exports = {
       }
     ],
     "@typescript-eslint/no-extraneous-class": "off",
-    "eslint-comments/no-use": ["warn", { allow: ["eslint", "eslint-disable"] }],
     "max-classes-per-file": "off",
     "unicorn/no-null": "off"
   }
