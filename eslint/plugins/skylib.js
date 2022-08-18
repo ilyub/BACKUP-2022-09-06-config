@@ -213,16 +213,16 @@ module.exports = {
             type: "default"
           },
           {
-            _id: "ts",
-            autoImport: true,
-            localName: "ts",
-            source: "typescript",
-            wildcard: true
-          },
-          {
             _id: "tsutils",
             autoImport: true,
             source: "tsutils",
+            wildcard: true
+          },
+          {
+            _id: "typescript",
+            autoImport: true,
+            localName: "ts",
+            source: "typescript",
             wildcard: true
           },
           {
