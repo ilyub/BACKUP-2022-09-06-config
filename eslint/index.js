@@ -1,5 +1,11 @@
 module.exports = {
-  ignorePatterns: ["!.*", "lcov-report/**", "node_modules/**"],
+  ignorePatterns: [
+    "!.*",
+    "dist/**",
+    "es/**",
+    "lcov-report/**",
+    "node_modules/**"
+  ],
   extends: ["./plugins"],
   env: {
     browser: true,

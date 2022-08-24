@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     "@skylib/class-match-filename": "off",
     "@skylib/consistent-enum-members": "off",
+    "@skylib/functions/guards/require-object-type-param": "off",
     "@skylib/no-at-sign-import": "off",
     "@skylib/no-at-sign-internal-import": ["warn", { allow: ["@/test-utils"] }],
     "@skylib/require-jsdoc": "off",
