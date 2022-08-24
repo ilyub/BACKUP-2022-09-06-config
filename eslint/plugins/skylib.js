@@ -330,7 +330,30 @@ module.exports = {
     ]
   },
   overrides: [
-    { files: "!*.js", extends: "plugin:@skylib/eslint-plugin/typescript" },
+    {
+      files: "!*.js",
+      extends: "plugin:@skylib/eslint-plugin/typescript",
+      rules: {
+        "@skylib/typescript/no-shadow": [
+          "warn",
+          {
+            allow: [
+              "Plugin",
+              "ReadonlyMap",
+              "ReadonlySet",
+              "constructor",
+              "event",
+              "name"
+            ],
+            builtinGlobals: true,
+            hoist: "all",
+            // eslint-disable-next-line @skylib/max-identifier-blocks -- Ok
+            ignoreFunctionTypeParameterNameValueShadow: false,
+            ignoreTypeValueShadow: true
+          }
+        ]
+      }
+    },
     {
       files: "*.vue",
       extends: "plugin:@skylib/eslint-plugin/vue",

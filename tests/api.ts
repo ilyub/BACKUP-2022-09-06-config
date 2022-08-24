@@ -1,15 +1,14 @@
 /* eslint jest/max-expects: [warn, { max: 3 }] -- Ok */
-/* eslint-disable @skylib/no-relative-parent-import -- Ok */
-/* eslint-disable @typescript-eslint/no-shadow -- Ok */
 
+// eslint-disable-next-line  @skylib/no-relative-parent-import, @skylib/typescript/no-shadow -- Ok
 import { eslint, jest } from "../api";
 
 test("eslint", () => {
   expect(eslint.getAllRules).toBeInstanceOf(Function);
-  expect(eslint.rules["@skylib/consistent-import"]).toBeInstanceOf(Object);
-  expect(eslint.rules["@typescript-eslint/no-shadow"]).toBeInstanceOf(Object);
+  expect(typeof eslint.rules["@skylib/consistent-import"]).toBe("object");
+  expect(typeof eslint.rules["@skylib/typescript/no-shadow"]).toBe("object");
 });
 
 test("jest", () => {
-  expect(jest.preset).toBeInstanceOf(Object);
+  expect(typeof jest.preset).toBe("object");
 });

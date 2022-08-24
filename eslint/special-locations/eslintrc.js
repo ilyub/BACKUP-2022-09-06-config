@@ -9,6 +9,7 @@ module.exports = {
             _id: "eslint",
             customOrder: [
               "files",
+              "ignorePatterns",
               "extends",
               "env",
               "parser",

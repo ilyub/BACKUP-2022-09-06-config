@@ -78,23 +78,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-namespace": "off",
-    "@typescript-eslint/no-shadow": [
-      "warn",
-      {
-        allow: [
-          "Plugin",
-          "ReadonlyMap",
-          "ReadonlySet",
-          "constructor",
-          "event",
-          "name"
-        ],
-        builtinGlobals: true,
-        hoist: "all",
-        ignoreFunctionTypeParameterNameValueShadow: false,
-        ignoreTypeValueShadow: true
-      }
-    ],
+    "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",

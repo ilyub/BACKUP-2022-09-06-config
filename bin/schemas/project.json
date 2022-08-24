@@ -2,7 +2,6 @@
   "bindings": [
     {
       "files": [
-        ".eslintignore",
         ".eslintrc.js",
         ".eslintrc.overrides.js",
         ".eslintrc.rule-overrides.js",

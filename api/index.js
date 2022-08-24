@@ -4,15 +4,17 @@ const preset = require("../jest/jest-preset");
 
 const skylib = require("../eslint/plugins/skylib");
 
-const typescriptEslint = require("../eslint/plugins/typescript-eslint");
+const skylibTypescript = skylib.overrides.find(
+  override => override.files === "!*.js"
+);
 
 module.exports = {
   eslint: {
     getAllRules,
     rules: {
       "@skylib/consistent-import": skylib.rules["@skylib/consistent-import"][1],
-      "@typescript-eslint/no-shadow":
-        typescriptEslint.rules["@typescript-eslint/no-shadow"][1]
+      "@skylib/typescript/no-shadow":
+        skylibTypescript.rules["@skylib/typescript/no-shadow"][1]
     }
   },
   jest: { preset }
