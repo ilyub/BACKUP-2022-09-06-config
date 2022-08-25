@@ -20,10 +20,12 @@ module.exports = {
     "@skylib/sort-statements": [
       "warn",
       {
-        rootOrder: [
+        programOrder: [
           "ImportDeclaration",
           "ExportAllDeclaration",
           "ExportDeclaration",
+          "ExportDefaultDeclaration",
+          "ExportUnknown",
           "ExportTypeDeclaration",
           "ExportFunctionDeclaration",
           "TypeDeclaration",

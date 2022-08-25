@@ -382,6 +382,24 @@ module.exports = {
               }
             ]
           }
+        ],
+        "@skylib/sort-statements": [
+          "warn",
+          {
+            programOrder: [
+              "ImportDeclaration",
+              "ExportAllDeclaration",
+              "ExportDeclaration",
+              "ExportUnknown",
+              "ExportTypeDeclaration",
+              "ExportFunctionDeclaration",
+              "Unknown",
+              "TypeDeclaration",
+              "FunctionDeclaration",
+              "ExportDefaultDeclaration",
+              "JestTest"
+            ]
+          }
         ]
       }
     },

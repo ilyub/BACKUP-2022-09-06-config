@@ -1,6 +1,7 @@
 module.exports = {
   ignorePatterns: [
     "!.*",
+    ".quasar/**",
     "dist/**",
     "es/**",
     "lcov-report/**",
