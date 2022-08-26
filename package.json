@@ -88,7 +88,7 @@
     "@commitlint/cli": ">=17",
     "@commitlint/config-conventional": ">=17",
     "@jest/test-sequencer": ">=28",
-    "@skylib/eslint-plugin": "^0.1.49",
+    "@skylib/eslint-plugin": "^0.1.50",
     "@types/eslint": ">=8",
     "@types/jest": ">=28",
     "@types/node": ">=18",
@@ -152,7 +152,7 @@
     "tslib": ">=2",
     "typedoc": ">=0",
     "typedoc-plugin-markdown": ">=3",
-    "typescript": ">=4",
+    "typescript": ">=4 <4.8",
     "vue-eslint-parser": ">=9"
   },
   "engines": {
