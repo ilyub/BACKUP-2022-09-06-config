@@ -13,6 +13,10 @@ module.exports = {
       rules: { "@skylib/config/eslintrc/no-disable": "warn" }
     },
     {
+      files: [".eslintrc.synonyms.js"],
+      rules: { "@skylib/config/eslintrc/sort-synonyms": "warn" }
+    },
+    {
       files: [".eslintrc.temp.js"],
       rules: { "@skylib/config/eslintrc/no-temp": "warn" }
     },
