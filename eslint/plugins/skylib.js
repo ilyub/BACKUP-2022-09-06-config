@@ -108,7 +108,7 @@ module.exports = {
       "warn",
       {
         sources: [
-          { _id: "catch-all", source: "**", type: "default" },
+          { _id: "catch-all", source: "**" },
           {
             _id: "./src/test-utils",
             source: `${pkg.name}/src/test-utils`,
@@ -167,7 +167,7 @@ module.exports = {
             autoImport: true,
             localName: "WrapperLike",
             source: "@vue/test-utils/dist/interfaces/wrapperLike",
-            type: "default"
+
           },
           {
             _id: "estree",
@@ -181,28 +181,28 @@ module.exports = {
             autoImport: true,
             localName: "fs",
             source: "node:fs",
-            type: "default"
+
           },
           {
             _id: "jest-extended/all",
             altLocalNames: ["jestExtendedMatchers"],
             localName: "matchers",
             source: "jest-extended/all",
-            type: "default"
+
           },
           {
             _id: "jquery",
             autoImport: true,
             localName: "$",
             source: "jquery",
-            type: "default"
+
           },
           {
             _id: "minisearch",
             autoImport: true,
             localName: "MiniSearch",
             source: "minisearch",
-            type: "default"
+
           },
           {
             _id: "path",
@@ -210,7 +210,7 @@ module.exports = {
             autoImport: true,
             localName: "path",
             source: "node:path",
-            type: "default"
+
           },
           {
             _id: "tsutils",
@@ -236,21 +236,21 @@ module.exports = {
             autoImport: true,
             localName: "Vue",
             source: "vue",
-            type: "default"
+
           },
           {
             _id: "vue-router",
             autoImport: true,
             localName: "VueRouter",
             source: "vue-router",
-            type: "default"
+
           },
           {
             _id: "vuedraggable",
             autoImport: true,
             localName: "VueDraggable",
             source: "vuedraggable",
-            type: "default"
+
           }
         ]
       }
