@@ -166,8 +166,7 @@ module.exports = {
             _id: "@vue/test-utils",
             autoImport: true,
             localName: "WrapperLike",
-            source: "@vue/test-utils/dist/interfaces/wrapperLike",
-
+            source: "@vue/test-utils/dist/interfaces/wrapperLike"
           },
           {
             _id: "estree",
@@ -180,37 +179,32 @@ module.exports = {
             altLocalNames: ["nodeFs"],
             autoImport: true,
             localName: "fs",
-            source: "node:fs",
-
+            source: "node:fs"
           },
           {
             _id: "jest-extended/all",
             altLocalNames: ["jestExtendedMatchers"],
             localName: "matchers",
-            source: "jest-extended/all",
-
+            source: "jest-extended/all"
           },
           {
             _id: "jquery",
             autoImport: true,
             localName: "$",
-            source: "jquery",
-
+            source: "jquery"
           },
           {
             _id: "minisearch",
             autoImport: true,
             localName: "MiniSearch",
-            source: "minisearch",
-
+            source: "minisearch"
           },
           {
             _id: "path",
             altLocalNames: ["nodePath"],
             autoImport: true,
             localName: "path",
-            source: "node:path",
-
+            source: "node:path"
           },
           {
             _id: "tsutils",
@@ -235,22 +229,19 @@ module.exports = {
             _id: "vue",
             autoImport: true,
             localName: "Vue",
-            source: "vue",
-
+            source: "vue"
           },
           {
             _id: "vue-router",
             autoImport: true,
             localName: "VueRouter",
-            source: "vue-router",
-
+            source: "vue-router"
           },
           {
             _id: "vuedraggable",
             autoImport: true,
             localName: "VueDraggable",
-            source: "vuedraggable",
-
+            source: "vuedraggable"
           }
         ]
       }
