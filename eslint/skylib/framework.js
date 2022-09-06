@@ -1,1 +1,1 @@
-module.exports = { extends: ["plugin:@skylib/framework"] };
+module.exports = { extends: ["plugin:@skylib/skylib-framework"] };

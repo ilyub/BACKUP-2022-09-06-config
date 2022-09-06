@@ -1,1 +1,1 @@
-module.exports = { extends: ["plugin:@skylib/functions"] };
+module.exports = { extends: ["plugin:@skylib/skylib-functions"] };
