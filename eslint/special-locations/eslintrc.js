@@ -31,7 +31,7 @@ module.exports = {
               "Property[key.value=/^@skylib\\u002F/u] > ArrayExpression > ObjectExpression"
           },
           {
-            _id: "skylib/disallow-import",
+            _id: "skylib.disallow-import",
             customOrder: ["disallow", "allow"],
             selector:
               "Property[key.value=/^@skylib\\u002Fdisallow-import\\u002F/u] > ArrayExpression > ObjectExpression"

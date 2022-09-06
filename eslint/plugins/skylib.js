@@ -5,7 +5,8 @@ const pkg = require(fs.realpathSync("./package.json"));
 const { selectors } = require("./api");
 
 module.exports = {
-  extends: "plugin:@skylib/eslint-plugin/all",
+  extends: "plugin:@skylib/eslint-plugin/misc",
+  plugins: ["@skylib/eslint-plugin"],
   rules: {
     "@skylib/consistent-empty-lines": [
       "warn",
@@ -60,25 +61,25 @@ module.exports = {
             prev: `:matches(${selectors.block}) > :matches(${selectors.statement})`
           },
           {
-            _id: "statement-ExportNamedDeclaration",
+            _id: "statement.ExportNamedDeclaration",
             emptyLine: "never",
             next: `:matches(${selectors.block}) > ExportNamedDeclaration[source]`,
             prev: `:matches(${selectors.block}) > ExportNamedDeclaration[source]`
           },
           {
-            _id: "statement-ExpressionStatement",
+            _id: "statement.ExpressionStatement",
             emptyLine: "never",
             next: `:matches(${selectors.block}) > ExpressionStatement`,
             prev: `:matches(${selectors.block}) > ExpressionStatement`
           },
           {
-            _id: "statement-ImportDeclaration",
+            _id: "statement.ImportDeclaration",
             emptyLine: "never",
             next: `:matches(${selectors.block}) > ImportDeclaration`,
             prev: `:matches(${selectors.block}) > ImportDeclaration`
           },
           {
-            _id: "statement-test",
+            _id: "statement.test",
             emptyLine: "always",
             next: [
               `:matches(${selectors.block}) > ExpressionStatement[expression.callee.name=test]`,
@@ -108,7 +109,6 @@ module.exports = {
       "warn",
       {
         sources: [
-          { _id: "catch-all", source: "**" },
           {
             _id: "./src/test-utils",
             source: `${pkg.name}/src/test-utils`,
@@ -242,7 +242,8 @@ module.exports = {
             autoImport: true,
             localName: "VueDraggable",
             source: "vuedraggable"
-          }
+          },
+          { _id: "catch-all", source: "**" }
         ]
       }
     ],

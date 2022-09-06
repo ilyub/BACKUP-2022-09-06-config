@@ -15,7 +15,7 @@ module.exports = {
     "@skylib/consistent-enum-members": "off",
     "@skylib/functions/guards/require-object-type-param": "off",
     "@skylib/no-at-sign-import": "off",
-    "@skylib/no-at-sign-internal-import": ["warn", { allow: ["@/test-utils"] }],
+    "@skylib/no-at-sign-internal-import": ["warn", { allow: "@/test-utils" }],
     "@skylib/require-jsdoc": "off",
     "@skylib/sort-statements": [
       "warn",

@@ -3,10 +3,10 @@ module.exports = {
     "@skylib/no-sibling-import": [
       "warn",
       {
-        folders: [
+        rules: [
           {
             filesToLint: ["./*"],
-            levels: [["./jest.config"], ["./jest.config.fast"]]
+            hierarchy: [["./jest.config"], ["./jest.config.fast"]]
           }
         ]
       }
